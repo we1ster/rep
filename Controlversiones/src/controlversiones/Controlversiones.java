@@ -10,12 +10,19 @@ package controlversiones;
  * @author nikof
  */
 public class Controlversiones {
+    private static int x, y, z;
 
-    /**
-     * @param args the command line arguments
-     */
+    public static int suma(int x, int y ){
+    return x+y;
+    }
     public static void main(String[] args) {
-        // TODO code application logic here
+        int x = 5, y=3, z;
+        z=suma(x, y);
+        showResult(z);
+    }
+
+    private static void showResult(int z) {
+        System.out.println(z);
     }
     
 }
